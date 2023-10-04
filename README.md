@@ -23,3 +23,6 @@ digital ocean      alias ido='info_do'                   Informacion Alias Digit
 
 Actualizado - 04/10/2023            \
 Los cambios iran con ascerisco
+
+Sigue este curso y cualquier noticia sobre ScriptingUnix en twitter : 
+#brqx #scriptingunix #cursoudemybrqx
