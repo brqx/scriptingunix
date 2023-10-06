@@ -1,0 +1,118 @@
+# ----------------------------------------------
+# Arquitectura Scripting Unix Brqx 2023
+# Version Curso 0.0.1
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+# Alias Google - Capitulo 029
+# ==============================================
+
+#---------------- Google alias ------------------
+
+alias gc="gcloud"
+gc_i="Alias pirncipal para Google Cloud"
+
+#---------------- Version ------------------
+
+# Definimos un lias para la informacion
+alias gcv='gc version'
+gcv_i="Version del cliente de Aws"
+
+# Google Account - Info
+
+gc_info_i="Informacion cuenta de Google (Gcloud)"
+
+alias gca="gc account "
+gca_i="Alias para gc account"
+
+alias gci="gc_info"
+gci_i="${gc_info_i}"
+
+#Google VM
+# ----------------------------------------------
+
+alias gc2="gc compute  "
+gc2_i="Alias principal para Google Compute"
+
+# Funcionalidad Connect Instance [SSH to INSTANCE] ( 18-11-2021) 
+alias gc2s="gc_connect_con_ssh"
+gc2s_i="Conexion [SSH] a una instancia Goole Cloud Compute"
+gc_connect_con_ssh_i="${gc2s_i}"
+
+alias gc2s1="gc_connect_con_gcloud"
+gc2s1_i="Conexion [GCLOUD] a una instancia Goole Cloud Compute"
+gc_connect_con_gcloud_i="${gc2s1_i}"
+
+# Log de arranque de la instancia
+alias gc2log="gc_compute_startup_log"
+gc2log_i="Log de arranque de la instancia"
+gc_compute_startup_log_i="${gc2log_i}"
+
+
+#- Listado de VM
+alias gc2l="gc_list_vm"
+gc2l_i="Listado global de instancias de Vm"
+gc_list_vm_i="${gc2l_i}"
+gc_list_compute_engine_i="${gc2l_i}"
+
+#- Listado de Maquinas
+alias gc2m="gc_list_machines"
+gc2m_i="Listado de maquinas para usar con Instancias de Google Compute"
+gc_list_machines_i="${gc2m_i}"
+
+#- Listado de Imagenes para usar con Vm
+alias gc2i="gc_list_images"
+gc2i_i="Listado de imagenes para usar con Google Cloud Compute Engine"
+gc_list_images_i="${gc2i_i}"
+
+#- Listado de Zonas
+alias gcz="gc_list_zones"
+gcz_i="Listado de zonas en Google Cloud"
+gc_list_zones_i="${gcz_i}"
+
+#- Listado de Instantaneas de Vm generadas
+alias gc2inst="gcloud compute machine-images list"
+gc2inst_i="Listado de Instantaneas de Vm generadas"
+
+alias gc2icreate="gc_image_create"
+gc2icreate_i="Crea una Imagen/Instantanea de una VM"
+gc_image_create_i="${gc2icreate_i}"
+
+# Google Storage ( Buckets )
+# ----------------------------------------------
+
+alias gc3="gc storage "
+gc3_i="Alias para storage"
+
+# Listar buckets
+alias gc3lb="gc_list_buckets"
+gc3lb_i="Listado de buckets de Google Cloud"
+gc_list_buckets_i="${gc3lb_i}"
+
+# Listar un bucket
+alias gc3l="gc_list_bucket"
+gc3l_i="Listar archivos de un bucket"
+gc_list_bucket_i="${gc3l_i}"
+
+# Copia de un fichero a un Bucket
+alias gc3c="gc_copy_to_bucket"
+gc3c_i="Copia de un fichero a un bucket en Google Cloud"
+gc_copy_to_bucket_i="${gc3c_i}"
+
+#----------- I N F O R M A T I O N  ------------------
+# Informacion de los alias definidos ( 2023 Jul )
+
+
+# info_gc es funcion
+# gc_info es otra funcion distinta
+
+alias gcloud_info="info_google"
+alias info_gcloud="info_google"
+alias gci="info_google"
+alias igc="info_google"
+
+gci_i="Informacion Alias Google"
+info_gc_i="${gci_i}"
+
+igc_i="${gci_i}"
+
+# ----------------------------------------------

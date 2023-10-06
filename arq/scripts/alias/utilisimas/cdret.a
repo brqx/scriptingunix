@@ -1,0 +1,87 @@
+# ----------------------------------------------
+# Arquitectura Scripting Unix Brqx 2023
+# Version Curso 0.0.1
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+# Alias Cdret - Capitulo 029
+# ==============================================
+
+cdN_i="Retroceso en ruta inteligente N niveles"
+alias cdN='echo "cd1 | CD1 | cd2 .. "'
+alias cdN2='echo "( se vuelve con cd -)"'
+
+alias cd1='cdone'
+alias cd2='cdret 2'
+alias cd3='cdret 3'
+alias cd4='cdret 4'
+alias cd5='cdret 5'
+alias cd6='cdret 6'
+alias cd7='cdret 7'
+alias cd8='cdret 8'
+alias cd9='cdret 9'
+alias cd10='cdret 10'
+alias cd11='cdret 11'
+alias cd12='cdret 12'
+alias cd13='cdret 13'
+alias cd14='cdret 14'
+alias cd15='cdret 15'
+alias cd16='cdret 16'
+alias cd17='cdret 17'
+alias cd18='cdret 18'
+alias cd19='cdret 19'
+alias cd20='cdret 20'
+alias cd21='cdret 21'
+alias cd22='cdret 22'
+alias cd23='cdret 23'
+alias cd24='cdret 24'
+alias cd25='cdret 25'
+alias cd26='cdret 26'
+alias cd27='cdret 27'
+alias cd28='cdret 28'
+alias cd29='cdret 29'
+alias cd30='cdret 30'
+
+# Tambien en mayusculas ... por si nos confundimos ...
+
+alias CD1='cd1'
+alias CD2='cd2'
+alias CD3='cd3'
+alias CD4='cd4'
+alias CD5='cd5'
+alias CD6='cd6'
+alias CD7='cd7'
+alias CD8='cd8'
+alias CD9='cd9'
+alias CD10='cd10'
+alias CD11='cd11'
+alias CD12='cd12'
+alias CD13='cd13'
+alias CD14='cd14'
+alias CD15='cd15'
+alias CD16='cd16'
+alias CD17='cd17'
+alias CD18='cd18'
+alias CD19='cd19'
+alias CD20='cd20'
+alias CD21='cd21'
+alias CD22='cd22'
+alias CD23='cd23'
+alias CD24='cd24'
+alias CD25='cd25'
+alias CD26='cd26'
+alias CD27='cd27'
+alias CD28='cd28'
+alias CD29='cd29'
+alias CD30='cd30'
+
+#-==================================================================
+
+alias utilisimas_info="info_utilisimas"
+
+alias ui="info_utilisimas"
+
+alias iu="info_utilisimas"
+iu_i="Informacion Arquitectura Funciones Utilisimas"
+ui_i="${giti_i}"
+
+# ----------------------------------------------

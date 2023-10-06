@@ -1,0 +1,55 @@
+# ----------------------------------------------
+# Arquitectura Scripting Unix Brqx 2023
+# Version Curso 0.0.1
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+# Alias Ps1 - Capitulo 029
+# ==============================================
+
+# Alias anteriores al curso en Arquitectura Brqx
+alias old_${INSIGNIA}='PS1="\[${yellow}\]${INSIGNIA}>\[$(textreset)\]"'
+alias old_no${INSIGNIA}='PS1=${OLD_PS1}'
+
+# brqx | nobrqx
+
+insignia_i="Habilita | deshabilita el ps1 con insignia"
+
+alias ${INSIGNIA}='enable_insignia'
+alias no${INSIGNIA}='enable_before'
+
+#Alias Gestion Rutas - Anagrama ( usuario )
+
+# curso | nocurso
+
+# Alias anteriores al curso en Arquitectura Brqx
+
+alias old_${ANAGRAMA}='PS1="${ANAGRAMA}> "'
+alias old_no${ANAGRAMA}='PS1=${OLD_PS1}'
+
+anagrama_i="Habilita | deshabilita el ps1 con anagrama"
+
+alias ${ANAGRAMA}='enable_anagrama'
+alias no${ANAGRAMA}='enable_before'
+
+brqz_i="Manejo de Ps1 super agil con git (si|no)"
+alias brqz='enable_ps1_git ; enable_anagrama'
+alias nobrqz='disable_ps1_git ; enable_default'
+
+# Alias Ps1
+
+alias enable_anagrama='enable_insignia ${ANAGRAMA}'
+alias enable_ps1_largo='enable_largo'
+
+alias disable_anagrama='disable_insignia'
+alias disable_largo='disable_insignia'
+
+# Alias ipath
+
+alias ipath='manage_ps1'
+ipath_i="Gestion de Prompt para Arquitecturas Brqx"
+manage_ps1_i="${ipath_i}"
+
+
+
+
+# ----------------------------------------------

@@ -1,0 +1,96 @@
+# ----------------------------------------------
+# Arquitectura Scripting Unix Brqx 2023
+# Version Curso 0.0.1
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+# Alias Azure - Capitulo 029
+# ==============================================
+
+#---------------- Azure alias ------------------
+
+#---------------- Version ------------------
+
+# Definimos un segundo alias para la informacion
+alias azv_largo='az version -o tsv | tr "\t" " " |  cut -d " " -f1'
+alias azv='az version'
+azv_i="Version del cliente de Aws"
+
+# Azure Account
+alias aza="az account "
+aza_i="Alias para az account"
+
+# Azure IAM
+# ----------------------------------------------
+
+alias azi="az iam "
+azi_i="Alias para Aws Iam"
+
+#Azure VM
+# ----------------------------------------------
+
+alias az2="az vm  "
+az2_i="Alias principal para Ec2"
+
+# Funcionalidad Connect Instance [SSH to INSTANCE] ( 18-11-2021) 
+alias az2s="az_connect_vm"
+az2s_i="Funcion de conexion con una instancia de Vm"
+az_connect_vm_i="${az2s_i}"
+
+#- Listado de VM
+alias az2l="az_list_vm"
+az2l_i="Listado global de instancias de Vm"
+az_list_vm_i="${az2l_i}"
+
+#- Listado de Imagenes
+alias az2i="az_list_images"
+az2i_i="Listado global de imagenes para crear Vm"
+az_list_images_i="${az2i_i}"
+
+# Azure Storage ( Blobs - pendiente)
+# ----------------------------------------------
+
+alias az3="az storage "
+az3_i="Alias para storage"
+
+# Listar cuentas de almacemiento
+alias az3ls="az_list_storage"
+az3ls_i="Listar cuentas de almacenamiento"
+az_list_storage_i="${az3ls_i}"
+
+# Listar contenedores
+alias az3lc="az_list_containers"
+az3lc_i="Listar contenedores de una cuenta de almacenamiento"
+az_list_containers_i="${az3lc_i}"
+
+# Listar blobs
+alias az3l="az_list_blobs"
+az3l_i="Listar blobs de un contenedor de una cuenta de almacenamiento"
+az_list_blobs_i="${az3l_i}"
+
+# Copia de un Blob
+alias az3c="az_copy_blob"
+az3c_i="Copia de un blob a un Container en Azure"
+az_copy_blob_i="${az3c_i}"
+
+#----------- I N F O R M A T I O N  ------------------
+# Informacion de los alias definidos ( 2023 Jul )
+
+
+# info_azure es funcion
+
+alias az_info="info_azure"
+alias azure_info="info_azure"
+alias azi="az_info"
+
+azi_i="Informacion Alias Azure"
+az_info_i="${azsi_i}"
+info_az_i="${azsi_i}"
+info_azure_i="${azsi_i}"
+azure_info_i="${azsi_i}"
+
+alias iaz="azi"
+iaz_i="${azi_i}"
+alias iazure="azi"
+alias azurei="azi"
+
+# ----------------------------------------------

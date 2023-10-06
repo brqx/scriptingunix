@@ -1,0 +1,78 @@
+# ----------------------------------------------
+# Arquitectura Scripting Unix Brqx 2023
+# Version Curso 0.0.1
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+# Alias Git - Capitulo 029
+# ==============================================
+
+# 1- clone
+
+alias gitcl="git clone " # Este alias no es muy necesario
+gitcl_i="Clonado/descarga de repositorio Git"
+alias gitclone="git_clone"
+gitclone_i=${gitcl_i}
+git_clone_i=${gitcl_i}
+
+
+# 2- crear rama
+
+alias gitk="git_checkout"
+gitk_i="Crear una nueva rama| Cambiar de rama con Git"
+git_checkout_i="${gitk_i}"
+
+# 2-3- Hacemos cambios en codigo
+
+# 3-Añadiemo el codigo 
+
+alias gita="git add ."
+gita_i="Actualizar cambios repositorio local con Git"
+
+# [ 4-Configurarmos el Repositorio con el Token]
+
+alias gitseturl="git_seturl"
+git_seturl_i="Ajuste del Token para subir codigo en GIT"
+
+
+# [ 4-Preparamos la subida ] solo la primera vez
+
+alias gitset="git_push_set_origin"
+gitset_i="Establecer el origen con Git - Preparar la rama para la subida (push)"
+git_push_set_origin_i="${gitset_i}"
+
+# 5-Hacemos el commmit con los cambios
+alias gitc="git_commit"
+gitc_i="Hacemos el commmit con los cambios"
+git_commit_i="${gitc_i}"
+
+# 6- Subimos el codigo generando una pull request a resolver en github
+
+alias gitpush="git push" # Este alias no es muy necesario
+gitpush_i="Subir el codigo a Github"
+
+# El resto : Pull Request y Merge se hace en la Web de Github
+
+# + Informacion de Git/Rama
+# ----------------------------------------------
+
+# Se puede usar un alias --> Problema si no existe git falla
+
+alias gitg_rama_parentesis="git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'"
+
+alias gitg_rama='' # Pendiente echo $(gitg_rama_parentesis | tr -d ")|(" )'
+gitg_rama_i="Obtener la rama actual de Git"
+
+
+
+# Alias giti | igit --> informacion funciones y alias para Git
+
+# La funcion es info_git - Ojo con los espacios
+alias git_info="info_git"
+# Mostrar arreglar giti
+alias giti="git_info"
+
+alias igit="giti"
+giti_i="Informacion Arquitectura Producto Git"
+igit_i="${giti_i}"
+
+# ----------------------------------------------

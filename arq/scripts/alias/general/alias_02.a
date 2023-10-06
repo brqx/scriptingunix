@@ -1,0 +1,65 @@
+# ----------------------------------------------
+# Arquitectura Scripting Unix Brqx 2023
+# Version Curso 0.0.1
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+# Version Alias 0.0.3
+
+# Alias generales - Capitulo 029
+# ==============================================
+# Nota alias set_text_length a partir del Capitulo 023
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+# Nota : Se crea rf a partir del capitulo 23
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+# Nota : Se crea M (arq_min) a partir del capitulo 24
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+
+# Alias ff --> busqueda ficheros
+
+alias ff="find . -type f "
+ff_i="Busqueda de ficheros"
+
+# Alis cf  --> copia ficheros
+
+alias cf="cp -rf " 
+ff_i="Copia de ficheros"
+
+# Alis rf  --> borrado de ficheros y directorios
+# ¡¡ Cuidado !!
+
+alias rf="rm -rf " 
+rf_i="Borrado de ficheros y directorios"
+
+
+# Alias h --> historico con grep
+
+alias h="history | cut -c6- | grep "
+h_i="Historico con grep"
+
+# Cargar la arquiectura desde cualqueir sitio
+# ARQ apuntara a nuestro Curso
+
+alias A=". ${ARQ_FUL}arq.x"
+A_i="Carga de la Arquitectura"
+
+alias M=". ${ARQ_MIN}arq.x"
+M_i="Carga de la Arquitectura_minimizada"
+
+
+# Nuevos alias funcionalidad Format_Text_Length y Set_Text_Length
+# Ojo : Antes era una funcion
+
+alias format_text_length="ftl_01 "
+alias set_text_length="stl_01 "
+
+# Alias i --> informacion funciones
+# Funcionalidades: general | git
+
+alias i="info "
+
+# Informacion General Arquitectura
+alias igen="info_gen"
+igen_i="Informacion General Arquitectura"
+
+# ----------------------------------------------

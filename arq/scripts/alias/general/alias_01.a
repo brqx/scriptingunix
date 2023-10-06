@@ -1,0 +1,19 @@
+# ----------------------------------------------
+# Arquitectura Scripting Unix Brqx 2023
+# Version Curso 0.0.1
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+# Alias de ejemplo - Capitulo 029
+# ==============================================
+
+alias alias_01="echo 'Es el alias 01'"
+alias_01_i="Lo que hace el alias 01"
+
+alias alias_02="echo 'Es el alias 02'"
+alias_01_i="Lo que hace el alias 02"
+
+
+mifuncion_01_i="Lo que hace mi funcion 01"
+mifuncion_02_i="Lo que hace mi funcion 01"
+
+# ----------------------------------------------

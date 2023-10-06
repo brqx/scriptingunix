@@ -1,0 +1,258 @@
+# ----------------------------------------------
+# Arquitectura Scripting Unix Brqx 2023
+# Version Curso 0.0.1
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+# Alias Kubernetes - Capitulo 029
+# ==============================================
+
+#---------------- K alias ------------------
+
+# Cambio por kubecolor
+# alias k="kubectl "
+#alias k="kubecolor "
+
+# Kubecolor para entornos claros
+alias k="kubecolor --light-background "
+k_i="Alias principal para Kubernetes (kubecolor)"
+
+
+
+# Mostrar la version de kubectl
+alias kv="k version --client=true"
+kv_i="Mostrar la version de kubectl"
+
+
+# Mostrar la version de kubectl del cluster (server)
+alias ksv="k version --short"
+ksv_i="Mostrar la version de kubectl del cluster (server)"
+
+#---------------- N F O ------------------
+
+# kubernetes create - get - delete
+alias kg="k get "
+kg_i="Alias principal de Kubernets Get"
+
+alias klogs="k logs "
+klogs_i="Mostrar los logs"
+
+# kubernetes run
+alias kr="k run "
+kr_i="Ejecutar un comando contra un pod en kubernetes"
+
+# Ejecutar un pod directamente : 
+
+# krit
+alias krit="kr --rm -it "
+krit_i="Ejecutar un pod directamente"
+
+# Carga un pod de una imagen indicada (Funcion)
+alias krgen="k8_runpod_sh"
+krgen_i="Carga un pod de una imagen indicada"
+
+# Cargar el entorno de kubernetes desde docker
+# Esto solo si esta minikube
+
+# kubernetes edit
+
+alias ke="k edit "
+ke_i="Kubernetes Edit"
+
+# kubernetes create - get - delete
+alias kcr="k create "
+kcr_i="Kubernetes Create"
+
+
+# Kubernets describe
+alias kdes="k describe  "
+kdes_i="Kubernetes Describe"
+
+alias kex="k expose "
+kex_i="Kubernetes expose (port)"
+
+alias kci="k cluster-info "
+kci_i="Kubernetes Cluster Info"
+
+#------------------- E X E C -------------------
+
+# Kubectl exec
+alias kxx="k exec "
+alias kit="kxx -it "
+kxx_i="Kubernetes Exec"
+kit_i="Kubernetes it"
+
+# Use kubectl exec [POD] -- [COMMAND] instead.
+# k exec -it podtest -- sh
+# Para bash necesitamos una funcion
+alias kbash="k8_exec_bash"
+kbash_i="Ejecutar bash en un pod de kubernetes"
+
+alias ksh="k8_exec_sh"
+ksh_i="Ejecutar sh en un pod de kubernetes ( para imagenes Alpine)"
+
+# Para yaml necesitamos otra funcion
+
+alias kyaml="k8_desc_yaml"
+kyaml_i="Alias principal para Kubernetes (kubecolor)"
+
+alias ksc="k scale "
+ksc_i="Alias principal para Kubernetes (kubecolor)"
+
+#--------- A P P L Y / D E L E T E ------------------
+
+alias kap="k apply "
+kap_i="Alias principal para Kubernetes (kubecolor)"
+
+alias kdl="k delete "
+alias kdel="kdl "
+kdl_i="Kubernetes Delete"
+kdel_i="${kdl_i}"
+
+
+# Aplicar un manifest a  nuestra configuracion del cluster
+alias ka="kap -f  "
+ka_i="Aplicar un manifest a  nuestra configuracion del cluster"
+
+alias kae="k8_apply_envsubst"
+kae_i="Aplicar un manifest a  nuestra configuracion del cluster substituyendo"
+# Multiple apply (funcion)
+
+alias kaf="k8_applyf_yaml"
+kaf_i="Multiple Apply"
+
+# Aplicar/Eliminar un manifesta  nuestra configuracion del cluster
+alias kd="kdl -f  "
+kd_i="Aplicar/Eliminar un manifesta  nuestra configuracion del cluster"
+
+# Multiple delete
+alias kdf="k8_delf_yaml"
+kdf_i="Multiple delete"
+
+#---------------- G E T ------------------
+
+# Kubernetes - Get nodes y get all
+alias kgn="kg nodes "
+alias kga="kg all"
+kgn_i="Kubernetes - Get nodes"
+kga_i="Kubernetes - get all"
+
+# Kubenetes - Get events
+
+alias kge="kg events "
+kge_i="Kubenetes - Get events"
+
+# Vemos los pods de todos los namespaces
+alias kgaa="kga --all-namespaces"
+kgaa_i="Vemos los pods de todos los namespaces"
+
+# Formato wide
+alias kgnw="kgn -o wide "
+alias kgaw="kga -o wide "
+kgnw_i="Get Nodes - Formato wide"
+kgaw_i="Get All - Formato wide"
+
+alias kgp="kg pods "
+alias kgs="kg services "
+alias kgd="kg deployments "
+alias kgr="kg replicasets "
+alias kgi="kg ingress "
+
+kgp_i="Kubernetes Get Pods"
+kgs_i="Kubernetes Get Services"
+kgd_i="Kubernetes Get Deployments"
+kgr_i="Kubernetes Get Replicaset"
+kgi_i="Kubernetes Get Ingress"
+
+
+alias kgpw="kg pods -o wide "
+alias kgsw="kg services -o wide "
+alias kgdw="kg deployments -o wide "
+alias kgrw="kg replicasets -o wide "
+
+kgpw_i="Alias principal para Kubernetes (kubecolor)"
+kgsw_i="Alias principal para Kubernetes (kubecolor)"
+kgdw_i="Alias principal para Kubernetes (kubecolor)"
+kgrw_i="Alias principal para Kubernetes (kubecolor)"
+
+# Obtiene las IPS de los pods
+kgpip="kgpw | tr -s ' ' | cut -d ' ' -f1,6"
+
+kgpip_i="Obtiene las IPS de los pods"
+
+# Namespaces
+
+alias kgns="k get ns "
+kgns_i="Kubernetes Namespaces"
+
+
+
+#---------------- D E L ------------------
+
+alias kdl_sv="kdl services "
+alias kdl_dp="kdl deployment "
+
+alias kdlp="kdl pod "
+
+kdl_sv_i="Kubernetes - Delete Services"
+kdl_dp_i="Kubernetes - Delete Deployments"
+kdlp_i="Kubernetes - Delete Pods"
+
+
+#---------------- D E S C R I B E ------------------
+
+#Describe service
+alias kdss="kdes svc "
+alias kdp="kdsp "
+
+alias kds="kdss"
+
+kdss_i="Kubernetes - Describe Services"
+kdp_i="Kubernetes - Describe Pods"
+kds_i="${kdss_i}"
+
+#--------------- R O L L   O U T ---------------
+
+alias kroll="k rollout"
+
+# Cambios en el deployment
+alias krollh="kr history deployment "
+
+# Estado de un deployment
+alias krolls="kr status deployment "
+
+# Rolback de un deployment
+alias krollu="kr undo deployment "
+
+kroll_i="Kubernetes - Roll Out"
+krollh_i="Kubernetes - Roll Out - History"
+krolls_i="Kubernetes - Roll Out - State"
+krollu_i="Kubernetes - Roll back - undo"
+
+
+# Port Forward
+# Example : k port-forward $PNAME 7000:9090 &
+alias kpp="k port-forward "
+
+kpp_i="Kubernetes - Port-Forward"
+
+
+#--------------- C O P Y  -  C P ---------------
+
+
+
+#----------- I N F O R M A T I O N  ------------------
+# Informacion de los alias definidos ( 2023 Jul )
+
+
+# info_k8s es funcion
+
+alias k8s_info="info_k8s"
+alias k8si="k8s_info"
+k8si_i="Informacion Alias Kubernetes"
+k8s_info_i="${k8si_i}"
+info_k8s_i="${k8si_i}"
+
+alias ik8s="k8si"
+ik8s_i="${k8si_i}"
+
+# ----------------------------------------------

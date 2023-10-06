@@ -1,0 +1,19 @@
+# ----------------------------------------------
+# Arquitectura Scripting Unix Brqx 2023
+# Version Curso 0.0.2
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+# Version Alias 0.0.3
+
+# Alias generales - Capitulo 029
+# ==============================================
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+
+# Alias lart --> busqueda ficheros
+
+alias lart="ls -lart"
+lart_i="Listado de ultimos ficheros cambiados"
+
+
+# ----------------------------------------------

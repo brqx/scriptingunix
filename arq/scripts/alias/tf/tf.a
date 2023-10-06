@@ -1,0 +1,107 @@
+# ----------------------------------------------
+# Arquitectura Scripting Unix Brqx 2023
+# Version Curso 0.0.1
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+# Alias Terraform - Capitulo 029
+# ==============================================
+
+# + Uso de Terraform (tf)
+# ----------------------------------------------
+
+#---------------- TF alias ------------------
+
+alias tf="terraform "
+tf_i="Alias Principal de Terraform"
+
+#---------------- I N I T  ------------------
+
+alias ti="tf init "
+ti_i="Inicializacion por defecto de Terraform"
+# Tenemos dos tipos de init
+# -reconfigure    - Los dos parten de la estructura actual del plan
+# -migrate-state
+# Ninguno es capaz de refrestar el estado actual desde un bucket S3
+
+# Una vez hemos puesto otro provider hay que hacer upgrade
+
+alias tiu="tf init -upgrade "
+tiu_i="Inicializacion con upgrade.Necesario con cambio de provider"
+
+#--------------- R E F R E S H ------------------
+# Ojo - tr ya es un comando - Es lo que debemos ver antes de crear un alias
+alias tfr="tf refresh"
+tfr_i="Refresca/Recupera la informacion desde un bucket S3"
+
+#---------------- P L A N  ------------------
+
+alias tp="tf plan"
+tp_i="Prepara e informa sobre la planificacion de la futura infraestructura"
+
+#---------------- A P P L Y  ------------------
+
+alias ta="tf apply --auto-approve"
+alias tta="time ta"
+ta_i="Aplica/Crea los cambios de infraestructura planificados"
+tta_i="Aplica mostrando tiempo que tarda en desplegarse la arquitectura"
+
+#---------------- S H O W    ------------------
+
+alias ts="tf show"
+ts_i="Muestra la infraestructura actual"
+
+#---------------- G R E P  --------------------
+alias tg="ts -no-color | grep "
+tg_i="Busca/Filtra parametros como la vpc_id de la infraestructura actual"
+
+#--------------- D E S T R O Y ---------------
+
+alias td="tf destroy --auto-approve"
+alias ttd="time td"
+td_i="Destruye la infraestructura de Terraform"
+ttd_i="Destruye mostrando tiempo que tarda en destruirse la arquitectura"
+
+# Destruccion limpia ( una segunda forma )
+alias ttd2="ttd &> /dev/null &"
+ttd2_i="Destruye ocultando la informacion y mostrando tiempo que tarda en destruirse la arquitectura"
+
+alias td2="td &> /dev/null &"
+td2_i="Destruye ocultando la informacion"
+
+
+#------------- V A L I D A T E  ------------------
+
+alias tv="tf validate"
+tv_i="Valida la sintaxis del codigo Terraform"
+
+
+#------------- W O R K S P A C E  ---------------
+
+alias tw="tf workspace"
+tw_i="Gestiona/Maneja workspaces con Terraform"
+
+#------------- S T A T E  ---------------
+
+alias tt="tf state"
+tt_i="Informa del estado actual de terraform en la infraestructura"
+
+#------------- M A K E    F O R M A T   |   L I N T   ---------------
+
+alias tff="tf fmt"
+tff_i="Formatea (LINT) el codigo terraform para que sea mas legible"
+
+
+# Alias tfi | itf --> informacion funciones y alias para Terraform
+
+# info_tf es funcion
+
+alias tf_info="info_tf"
+alias tfi="tf_info"
+tfi_i="Informacion Alias Terraform"
+tf_info_i="${tfi_i}"
+info_tf_i="${tfi_i}"
+
+alias itf="tfi"
+itf_i="${tfi_i}"
+
+# ----------------------------------------------

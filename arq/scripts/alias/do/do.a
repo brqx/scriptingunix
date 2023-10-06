@@ -1,0 +1,126 @@
+# ----------------------------------------------
+# Arquitectura Scripting Unix Brqx 2023
+# Version Curso 0.0.1
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+# Alias Digital Ocean - Capitulo 029
+# ==============================================
+
+#---------------- Digital Ocean alias ------------------
+
+# Ojo : No podemos usar alias do - ya existe en unix
+alias docean="doctl"
+docean_i="Alias pirncipal para Digital Ocean"
+
+#---------------- Version ------------------
+
+# Definimos un lias para la informacion
+alias doceanv='doctl version | grep doctl |  cut -d " " -f3'
+doceanv_i="Version del cliente de Digital Oceran"
+
+# Version del cliente s3cmd
+alias dos3v="s3cmd --version | cut -d ' ' -f3"
+
+# Vamos a crear una funcion para la version de Digital Ocean
+alias dov="do_get_version"
+doceanv_i="Versiones de los clientes de DOceran doctl y s3cmd"
+dov_i="${doceanv_i}"
+
+# Digital Ocean Account - Info
+
+
+alias doai="docean_info"
+doai_i="Informacion de Digital Ocean"
+docean_info_i="${doai_i}"
+
+# Digial Ocean Compute - Droplets - VM
+# ----------------------------------------------
+
+alias do2="do compute  "
+do2_i="Alias principal para Digital Ocean Compute"
+
+# Funcionalidad Ssh Keys
+alias dokeys="do_list_ssh_keys"
+dokeys_i="Listado de claves ssh con Fingerprint cifrado"
+do_list_ssh_keys_i="${dokeys_i}"
+
+# Funcionalidad Connect Instance [SSH to INSTANCE] ( 18-11-2021) 
+alias do2s="do_connect_con_ssh"
+do2s_i="Conexion [SSH] a una instancia Goole Cloud Compute"
+do_connect_con_ssh_i="${do2s_i}"
+
+#- Listado de VM
+alias do2l="do_list_vm"
+do2l_i="Listado global de instancias de Vm"
+do_list_vm_i="${do2l_i}"
+do_list_compute_engine_i="${do2l_i}"
+
+
+# Digital Ocean ( Architecture )
+# ----------------------------------------------
+
+#- Listado de Regiones
+alias dor="do_list_regions"
+dor_i="Listado de zonas en Digital Ocean"
+do_list_regions_i="${dor_i}"
+
+#- Listado de Regiones Detallado
+alias dori="do_info_regions"
+dori_i="Listado de regiones detallado en Digital Ocean"
+do_info_regions_i="${dori_i}"
+
+# Digital Ocean ( Imagenes )
+# ----------------------------------------------
+
+#- Listado de Imagenes para usar con Vm de Distrubuciones
+alias do2id="do_list_distribution_images"
+do2id_i="Imagenes para Digital Ocean de distribuciones"
+do_list_distribution_images_i="${do2id_i}"
+
+alias do2ia="do_list_application_images"
+do2ia_i="Imagenes para Digital Ocean de aplicaciones"
+do_list_application_images_i="${do2ia_i}"
+
+alias do2iu="do_list_user_images"
+do2iu_i="Imagenes para Digital Ocean de usuario (tuyas)"
+do_list_user_imagesi="${do2iu_i}"
+
+
+# Digital Ocean ( Buckets )
+# ----------------------------------------------
+
+#Lista all objects in all backets
+alias do3la="s3cmd la "
+do3la_i="Listar todos los objetos en todos los buckets"
+
+# Listar buckets
+alias do3lb="do_list_buckets"
+do3lb_i="Listado de buckets de Digital Ocean"
+do_list_buckets_i="${do3lb_i}"
+
+# Listar un bucket
+alias do3l="do_list_bucket"
+do3l_i="Listar archivos de un bucket"
+do_list_bucket_i="${do3l_i}"
+
+# Copia de un fichero a un Bucket
+alias do3c="do_copy_to_bucket"
+do3c_i="Copia de un fichero a un bucket en Google Cloud"
+do_copy_to_bucket_i="${do3c_i}"
+
+#----------- I N F O R M A T I O N  ------------------
+# Informacion de los alias definidos ( 2023 Jul )
+
+
+# info_do es funcion
+
+alias do_info="info_do"
+alias doi="info_do"
+alias ido="info_do"
+
+doi_i="Informacion Alias Digital Ocean"
+info_do_i="${doi_i}"
+
+ido_i="${doi_i}"
+
+# ----------------------------------------------

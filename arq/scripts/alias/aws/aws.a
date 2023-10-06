@@ -1,0 +1,111 @@
+# ----------------------------------------------
+# Arquitectura Scripting Unix Brqx 2023
+# Version Curso 0.0.2
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+# Alias Aws - Capitulo 029
+# ==============================================
+
+#---------------- Aws alias ------------------
+
+#---------------- Version ------------------
+
+alias awv="aws --version"
+awv_i="Version del cliente de Aws"
+
+# Check Aws Account
+# Crear funcion que cifre esa informacion
+alias awk="aws sts get-caller-identity"
+awv_i="Comprueba que Aws se ha configurado correctamente para acceder a la nube"
+
+
+# Amazon Aws Configure - Por seguridad no se debe usar
+alias awc="aws configure "
+awc_i="Alias para aws configure"
+
+# Amazon AIM
+# ----------------------------------------------
+
+alias awi="aws iam "
+awi_i="Alias para Aws Iam"
+
+#Amazon EC2
+# ----------------------------------------------
+
+alias aw2="aws ec2 "
+aw2_i="Alias principal para Ec2"
+
+# Funcionalidad Connect Instance [SSH to INSTANCE] ( 18-11-2021) 
+alias aw2s="aws_connect_ec2"
+aw2s_i="Funcion de conexion con una instancia de Ec2"
+aws_connect_ec2_i="${aw2s_i}"
+
+# Funcionalidad Connect Instance [SSH to INSTANCE] ( 18-11-2021) 
+alias aw2sa="aws_connect_agent_ec2"
+aw2sa_i="Conexion [SSH] a una instancia EC2 con Agent Forwarding"
+aws_connect_agent_ec2_i="${aw2sa_i}"
+
+#- Pendiente de crear funcion
+alias aw2l="aws_list_ec2"
+aw2l_i="Listado global de instancias de Ec2"
+aws_list_ec2_i="${aw2l_i}"
+
+#Amazon S3
+# ----------------------------------------------
+
+alias aw3="aws s3 "
+aw3_i="Alias para S3"
+
+alias awa3="aws  s3api "
+awa3_i="Alias para S3 api"
+
+#-Aws Secure Connect Engine - Aws Vault
+
+#Amazon Vault Conexion 1h
+# ----------------------------------------------
+
+alias awva="aws-vault "
+awva_i="Alias principal para aws-vault"
+
+#Aws vault list
+
+alias awval="awva list"
+awval_i="Listado de conexiones de aws-vault"
+
+#Amazon Vault Conexion 1h
+
+alias awv="awva exec "
+awv_i="Vault alias con duracion por defecto de 1h"
+
+# Este tiene que ser una funcion
+alias awvd="aws_vault_duration"
+awvd_i="Conexion a aws con Token y una duraccion determinada"
+aws_vault_duration_i="${awvd_i}"
+
+# Funcionalidad Conexion 3h
+
+alias awv3="awvd 3h "
+awv3_i="Conexion con Vault - Funcionalidad Conexion 3h"
+
+# Funcionalidad DexConexion - Debe ser una funcion
+
+alias awvu="aws_vault_unset"
+awvu_i="Desconexion de AWS_VAULT - Elimina variable de entorno"
+aws_vault_unset_i="${awvu_i}"
+
+#----------- I N F O R M A T I O N  ------------------
+# Informacion de los alias definidos ( 2023 Jul )
+
+
+# info_k8s es funcion
+
+alias aws_info="info_aws"
+alias awsi="aws_info"
+awsi_i="Informacion Alias Amazon Aws"
+aws_info_i="${awsi_i}"
+info_aws_i="${awsi_i}"
+
+alias iaws="awsi"
+iaws_i="${awsi_i}"
+
+# ----------------------------------------------
