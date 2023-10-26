@@ -1,7 +1,7 @@
 # scriptingunix
-Arquitectura Scripting Unix Brqx - Ricardo Cabello Torres Curso Scripting Unix Udemy
+Scripting Unix Architecture | Arquitectura Scripting Unix Brqx - Ricardo Cabello Torres Curso Scripting Unix Udemy
 
-Funcionalidades : 
+Functionalities | Funcionalidades : 
 
 
 ==--==--==--==--
@@ -19,11 +19,21 @@ digital ocean      alias ido='info_do'                   Informacion Alias Digit
 --==--==--==--
 
 
-Actualizado - 26/10/2023            \
-Los cambios iran con ascerisco
 
+Updated | Actualizado - 26/10/2023            \
+Changes will be with Ascerisk | Los cambios iran con ascerisco
+
+Follow this course and any news about ScriptingUnix on Twitter |
 Sigue este curso y cualquier noticia sobre ScriptingUnix en twitter : 
-#brqx #scriptingunix #cursoudemybrqx
+
+#brqx #scriptingunix #cursoudemybrqx 
+
+[Curso Scripting Unix ES](https://www.udemy.com/course/scripting-unix-for-cloud-brqx-2023/) \
+
+[Canal Youtube Brqx](https://youtube.com/@brqx) \
+
+[Website Scripting Unix](https://scriptingunix.com/) \
+
 
 Se va a preparar una arquitectura multi idioma
 
